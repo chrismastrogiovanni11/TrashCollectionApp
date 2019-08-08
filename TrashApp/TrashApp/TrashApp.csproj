@@ -180,6 +180,14 @@
     <Compile Include="Migrations\201908071556596_InitialCreate.Designer.cs">
       <DependentUpon>201908071556596_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908081917446_addedModels.cs" />
+    <Compile Include="Migrations\201908081917446_addedModels.Designer.cs">
+      <DependentUpon>201908081917446_addedModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908081939405_added more properties to customer model.cs" />
+    <Compile Include="Migrations\201908081939405_added more properties to customer model.Designer.cs">
+      <DependentUpon>201908081939405_added more properties to customer model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -272,6 +280,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201908071556596_InitialCreate.resx">
       <DependentUpon>201908071556596_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908081917446_addedModels.resx">
+      <DependentUpon>201908081917446_addedModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908081939405_added more properties to customer model.resx">
+      <DependentUpon>201908081939405_added more properties to customer model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

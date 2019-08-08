@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -50,6 +51,12 @@ namespace TrashApp.Controllers
         {
             if (ModelState.IsValid)
             {
+                //gets the primary key of the user who is logged in -- AspNetUsers table
+                var userId = User.Identity.GetUserId();
+
+                //assign the FK of the customer to the primary key of the AspNetUser
+                customer.ApplicationId = userId;
+
                 context.Customers.Add(customer);
                 context.SaveChanges();
                 return RedirectToAction("Index");
