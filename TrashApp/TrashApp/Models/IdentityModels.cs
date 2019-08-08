@@ -29,5 +29,7 @@ namespace TrashApp.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<TrashApp.Models.Customer> Customers { get; set; }
     }
 }
