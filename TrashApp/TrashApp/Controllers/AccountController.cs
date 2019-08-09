@@ -168,7 +168,20 @@ namespace TrashApp.Controllers
                     await this.UserManager.AddToRoleAsync(user.Id, model.UserRoles);
                     await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
 
+                    if (model.UserRoles == "Customer")
+                    {
+                        return RedirectToAction("Create", "Customers");
+                    }
+
+                    if (model.UserRoles == "Employee")
+                    {
+                        return RedirectToAction("Create", "Employee");
+                    }
+
                     return RedirectToAction("Index", "Home");
+                   
+                    
+                    
                 }
 
                 // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771

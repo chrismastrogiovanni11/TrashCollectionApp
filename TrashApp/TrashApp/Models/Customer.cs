@@ -35,7 +35,7 @@ namespace TrashApp.Models
         public string State { get; set; }
 
         [Display(Name = "Start Date")]
-        public int StartDate { get; set; }
+        public string StartDate { get; set; }
 
         [Display(Name = "End Date")]
         public int EndDate { get; set; }

@@ -7,13 +7,13 @@ namespace TrashApp.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class addedModels : IMigrationMetadata
+    public sealed partial class tryingtofixdatabaseproblem : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addedModels));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(tryingtofixdatabaseproblem));
         
         string IMigrationMetadata.Id
         {
-            get { return "201908081917446_addedModels"; }
+            get { return "201908091849282_trying to fix database problem"; }
         }
         
         string IMigrationMetadata.Source
